@@ -5,7 +5,7 @@ import com.yankie.zhu.algorithm.utils.AlgorithmUtils;
 public class ShellSort {
 
     public static void main(String[] args) {
-        int[] array = AlgorithmUtils.generateIntArray(20);
+        int[] array = AlgorithmUtils.generateIntArray(8);
 
         shellSort(array);
         for (int i = 0; i < array.length; i++) {

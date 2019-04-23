@@ -8,7 +8,7 @@ import com.yankie.zhu.algorithm.utils.AlgorithmUtils;
 public class BubbleSort {
 
     public static void main(String[] args) {
-        int[] array = AlgorithmUtils.generateIntArray(4000);
+        int[] array = AlgorithmUtils.generateIntArray(400000);
 
         long startTime = System.nanoTime();
 
@@ -45,7 +45,7 @@ public class BubbleSort {
 
     private static void bubbleSort1(int[] arr) {
         int len = arr.length;
-        for (int i = 0; i < len; i++) {
+        for (int i = 0; i < len - 1; i++) {
             for (int j = i + 1; j < len; j++) {
                 if (arr[i] > arr[j]) {
                     AlgorithmUtils.swap(arr, i, j);
